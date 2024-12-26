@@ -42,11 +42,11 @@ urlpatterns = [
 
     # local path
     path('', include('apps.product.urls')),
-    path('about/', include('apps.about.urls')),
-    path('blog/', include('apps.blog.urls')),
-    path('common/', include('apps.common.urls')),
-    path('user/', include('apps.user.urls')),
-    path('contact/', include('apps.contact.urls')),
+    path('', include('apps.about.urls')),
+    path('', include('apps.blog.urls')),
+    path('', include('apps.common.urls')),
+    path('', include('apps.user.urls')),
+    path('', include('apps.contact.urls')),
 ]
 
 # for DEBUG

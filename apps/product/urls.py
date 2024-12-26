@@ -1,9 +1,8 @@
 from django.urls import path
 
-
-app_name = 'product'
+from .views import home_page_as_view
 
 
 urlpatterns = [
-    
+    path('', home_page_as_view, name='home'),
 ]
