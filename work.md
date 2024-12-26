@@ -5,3 +5,4 @@ Niture CBV
 Loyiha boshlandi!
 
 * Folder structure
+* CustomUser yozilmoqda
