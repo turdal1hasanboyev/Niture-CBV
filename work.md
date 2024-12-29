@@ -7,3 +7,4 @@ Loyiha boshlandi!
 * Folder structure
 * CustomUser yozilmoqda
 * Template folder structure
+* Modellar yozilmoqda

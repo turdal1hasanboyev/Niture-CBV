@@ -132,25 +132,25 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # default
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # PostgreSQL settings
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'niturecbv',
-#         'USER': 'niturecbv',
-#         'PASSWORD': 'niturecbv',
-#         'HOST': '127.0.0.1', # or 'localhost'
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'niturecbv',
+        'USER': 'niturecbv',
+        'PASSWORD': 'niturecbv',
+        'HOST': '127.0.0.1', # or 'localhost'
+        'PORT': '5432',
+    }
+}
 
 
 # Password validation

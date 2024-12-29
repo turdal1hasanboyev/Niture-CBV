@@ -26,7 +26,6 @@
     </div>
 </section>
 
-<!-- discount -->
 <div class="container">
     <div id="myCarousel" class="carousel slide banner_Client" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -51,7 +50,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -71,7 +69,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -91,22 +88,19 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- end discount -->
-<!-- trending -->
+
 <div class="trending">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="title">
                     <h2>Trending <strong class="black">Categories</strong></h2>
-
                 </div>
             </div>
         </div>
@@ -115,37 +109,30 @@
                 <div class="trending-box">
                     <figure><img src="images/1.jpg" /></figure>
                     <h3>Outdoor</h3>
-
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                 <div class="trending-box">
                     <figure><img src="images/2.jpg" /></figure>
                     <h3>Living Room</h3>
-
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 margitop">
                 <div class="trending-box">
                     <figure><img src="images/3.jpg" /></figure>
                     <h3>Bedroom Lighting</h3>
-
                 </div>
             </div>
-
         </div>
     </div>
 </div>
-<!-- end trending -->
 
-<!-- our brand -->
 <div class="brand">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="title">
                     <h2>Featured <strong class="black">Brands</strong></h2>
-
                 </div>
             </div>
         </div>
@@ -185,15 +172,13 @@
         </div>
     </div>
 </div>
-<!-- end our brand -->
-<!-- map -->
+
 <div class="contact">
     <div class="container-fluid padddd">
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="title">
                     <h2>Contact <strong class="black">Us</strong></h2>
-
                 </div>
             </div>
         </div>
@@ -205,19 +190,20 @@
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 padddd">
-                <form class="main_form">
+                <form class="main_form" method="post">
+                    {% csrf_token %}
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <input class="form-control" placeholder="Name" type="text" name="Name">
+                            <input class="form-control" placeholder="Name" type="text" name="name">
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <input class="form-control" placeholder="Email" type="text" name="Email">
+                            <input class="form-control" placeholder="Email" type="text" name="email">
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <input class="form-control" placeholder="Phone" type="text" name="Phone">
+                            <input class="form-control" placeholder="Phone" type="text" name="phone_number">
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                            <textarea class="textarea" placeholder="Message" type="text" name="message"></textarea>
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             <button class="send">Send</button>
@@ -228,6 +214,5 @@
         </div>
     </div>
 </div>
-<!-- end map -->
 
 {% endblock %}
